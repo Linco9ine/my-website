@@ -1,9 +1,55 @@
 <!DOCTYPE html>
 <html lang='en'>
-    <head>
-        <title>WEB</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+	<head>
+		<title>Web Dev</title>
+		<meta charset='utf-8'>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				background-color: #eee;
+			}
+
+			.flex-container ul {
+				display: flex;
+				background-color: DodgerBlue;
+				list-style-type: none;
+				justify-content: flex-start;
+			}
+
+			.flex-container ul li {
+				background-color: darkblue;
+				font-size: 16px;
+				padding: 10px;
+				margin: 10px;
+				width: 100%;
+				flex-direction: row;
+				text-align: center;
+			}
+
+			.flex-container ul li a {
+				color: white;
+				text-decoration: none;
+			}
+
+			.flex-container ul li:hover {
+				text-decoration: underline;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="flex-container">
+			<ul>
+				<li><a href="#Home">Home</a></li>
+				<li><a href="#Tutorials">Tutorials</a></li>
+				<li><a href="#Price">Price</a></li>
+				<li><a href="About">About</a></li>
+			</ul>
+		</div>
+	</body>
 </html>

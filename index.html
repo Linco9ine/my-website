@@ -1,55 +1,81 @@
 <!DOCTYPE html>
-<html lang='en'>
-	<head>
-		<title>Web Dev</title>
-		<meta charset='utf-8'>
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-			}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Your Name</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
 
-			body {
-				background-color: #eee;
-			}
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Your Name</span></h1>
+            <p>Aspiring <b>Web Developer</b>, <b>Cameraman</b>, and <b>Video Editor</b>.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
 
-			.flex-container ul {
-				display: flex;
-				background-color: DodgerBlue;
-				list-style-type: none;
-				justify-content: flex-start;
-			}
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate student with experience in web development, cloud infrastructure management, and video editing. 
+            I thrive on creative projects and am eager to explore innovative solutions in technology and storytelling.
+        </p>
+    </section>
 
-			.flex-container ul li {
-				background-color: darkblue;
-				font-size: 16px;
-				padding: 10px;
-				margin: 10px;
-				width: 100%;
-				flex-direction: row;
-				text-align: center;
-			}
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Description of the project goes here.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>Description of the project goes here.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <h3>Project Title 3</h3>
+                <p>Description of the project goes here.</p>
+            </div>
+        </div>
+    </section>
 
-			.flex-container ul li a {
-				color: white;
-				text-decoration: none;
-			}
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me for collaborations or opportunities!</p>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-			.flex-container ul li:hover {
-				text-decoration: underline;
-				color: white;
-			}
-		</style>
-	</head>
+    <footer>
+        <p>© 2024 Your Name. All rights reserved.</p>
+    </footer>
 
-	<body>
-		<div class="flex-container">
-			<ul>
-				<li><a href="#Home">Home</a></li>
-				<li><a href="#Tutorials">Tutorials</a></li>
-				<li><a href="#Price">Price</a></li>
-				<li><a href="About">About</a></li>
-			</ul>
-		</div>
-	</body>
+    <script src="script.js"></script>
+</body>
 </html>
